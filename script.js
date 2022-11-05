@@ -98,4 +98,4 @@ for (let i = 1; i <= n; i++) {
 }
 Str += "<br><hr>";
 out.innerHTML = Str;
-///git training
+///git training- push done with VSCode
