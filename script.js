@@ -6,6 +6,7 @@ import { LeftHollowTriangle } from "./Module/LeftHollowTriangle.mjs";
 import { Pyramid } from "./Module/Pyramid.mjs";
 import { InvertedPyramid } from "./Module/InvertedPyramid.mjs";
 import { HollowInvertedPyramid } from "./Module/HollowInvertedPyramid.mjs";
+import { Rhombus } from "./Module/Rhombus.mjs";
 
 let out = document.querySelector(".out1");
 let n = 5;
@@ -33,31 +34,6 @@ out.innerHTML = InvertedPyramid(n); //////////// Inverted Pyramid
 out = document.querySelector(".out8");
 out.innerHTML = HollowInvertedPyramid(n); //////// Hollow Inverted Pyramid
 ////////////////////
-
 out = document.querySelector(".out9");
-Str = "";
-//////////// Rhombus
-Str = " Rhombus <br>";
-n = 5;
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n - i; j++) {
-    Str += "&nbsp ";
-  }
-  for (let j = 1; j <= 2 * i - 1; j++) {
-    Str += "* ";
-  }
-
-  Str += "<br>";
-}
-for (let i = n - 1; i >= 1; i--) {
-  for (let j = 1; j <= n - i; j++) {
-    Str += "&nbsp ";
-  }
-  for (let j = 1; j <= 2 * i - 1; j++) {
-    Str += "* ";
-  }
-  Str += "<br>";
-}
-Str += "<br><hr>";
-out.innerHTML = Str;
+out.innerHTML = Rhombus(n); //////////// Rhombus
 /////////////////////////
