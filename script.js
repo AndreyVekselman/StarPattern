@@ -1,24 +1,12 @@
+import { HollowSquare } from "./Module/HollowSquare.mjs";
+
 let out = document.querySelector(".out1");
 let Str = "";
-let n = 0;
+let n = 5;
 let flag = 0;
-//////////// Hollow squre
-Str = "Hollow squre <br>";
-n = 5;
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (i == 1 || i == n) {
-      Str += "* ";
-    } else if (j == 1 || j == n) {
-      Str += "* ";
-    } else {
-      Str += "&nbsp ";
-    }
-  }
-  Str += "<br>";
-}
-Str += "<br><hr>";
-out.innerHTML = Str;
+//////////// Hollow square
+
+out.innerHTML = HollowSquare(n);
 //////
 out = document.querySelector(".out2");
 Str = "";
