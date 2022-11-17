@@ -2,9 +2,9 @@ import { HollowSquare } from "./Module/HollowSquare.mjs";
 import { RightTriangle } from "./Module/RightTriangle.mjs";
 import { LeftTriangle } from "./Module/LeftTriangle.mjs";
 import { DownwardLeftTriangle } from "/Module/DownwardLeftTriangle.mjs";
+import { LeftHollowTriangle } from "./Module/LeftHollowTriangle.mjs";
 
 let out = document.querySelector(".out1");
-let Str = "";
 let n = 5;
 
 out.innerHTML = HollowSquare(n); //////////// Hollow square
@@ -23,27 +23,9 @@ out.innerHTML = DownwardLeftTriangle(n); //////////// Downward Left Triangle
 
 //////////
 out = document.querySelector(".out5");
-Str = "";
+out.innerHTML = LeftHollowTriangle(n); //////////// Left Hollow Triangle
 
-//////////// Left Hollow Triangle
-Str = " Left Hollow Triangle <br>";
-n = 5;
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (i == n) {
-      Str += "* ";
-    } else if (j == 1 || j == i) {
-      Str += "* ";
-    } else {
-      Str += "&nbsp ";
-    }
-  }
-  Str += "<br>";
-}
-Str += "<br><hr>";
-out.innerHTML = Str;
 ////////////
-
 out = document.querySelector(".out6");
 Str = "";
 //////////// Pyramid
