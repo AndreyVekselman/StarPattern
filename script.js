@@ -12,29 +12,11 @@ import { PrintStars } from "./Module/PrintStars.mjs";
 let n = 5;
 
 PrintStars(HollowSquare(n)); //////////// Hollow square
-//////
-out = document.querySelector(".out2");
-out.innerHTML = RightTriangle(n); //////////// Right Triangle
-//////////
-out = document.querySelector(".out3");
-out.innerHTML = LeftTriangle(n); //////////// Left Triangle
-//////////
-out = document.querySelector(".out4");
-out.innerHTML = DownwardLeftTriangle(n); //////////// Downward Left Triangle
-//////////
-out = document.querySelector(".out5");
-out.innerHTML = LeftHollowTriangle(n); //////////// Left Hollow Triangle
-////////////
-out = document.querySelector(".out6");
-out.innerHTML = Pyramid(n); //////////// Pyramid
-////////
-out = document.querySelector(".out7");
-out.innerHTML = InvertedPyramid(n); //////////// Inverted Pyramid
-////////
-out = document.querySelector(".out8");
-out.innerHTML = HollowInvertedPyramid(n); //////// Hollow Inverted Pyramid
-////////////////////
-out = document.querySelector(".out9");
-out.innerHTML = Rhombus(n); //////////// Rhombus
-/////////////////////////
-PrintStars(Rhombus(n));
+PrintStars(RightTriangle(n)); //////////// Right Triangle
+PrintStars(LeftTriangle(n)); //////////// Left Triangle
+PrintStars(DownwardLeftTriangle(n)); //////////// Downward Left Triangle
+PrintStars(LeftHollowTriangle(n)); //////////// Left Hollow Triangle
+PrintStars(Pyramid(n)); //////////// Pyramid
+PrintStars(InvertedPyramid(n)); //////////// Inverted Pyramid
+PrintStars(HollowInvertedPyramid(n)); //////// Hollow Inverted Pyramid
+PrintStars(Rhombus(n)); //////////// Rhombus
