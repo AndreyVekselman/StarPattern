@@ -1,40 +1,26 @@
 import { HollowSquare } from "./Module/HollowSquare.mjs";
 import { RightTriangle } from "./Module/RightTriangle.mjs";
+import { LeftTriangle } from "./Module/LeftTriangle.mjs";
 
 let out = document.querySelector(".out1");
 let Str = "";
 let n = 5;
-let flag = 0;
-//////////// Hollow square
 
+//////////// Hollow square
 out.innerHTML = HollowSquare(n);
 //////
+
 out = document.querySelector(".out2");
 //////////// Right Triangle
 out.innerHTML = RightTriangle(n);
 //////////
-out = document.querySelector(".out3");
 
+out = document.querySelector(".out3");
 //////////// Left Triangle
-Str = "Left Triangle <br>";
-n = 5;
-flag = 1;
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (j > flag) {
-      Str += "&nbsp ";
-    } else {
-      Str += "* ";
-    }
-  }
-  flag++;
-  Str += "<br>";
-}
-Str += "<br><hr>";
-out.innerHTML = Str;
+out.innerHTML = LeftTriangle(n);
 //////////
+
 out = document.querySelector(".out4");
-Str = "";
 
 //////////// Downward Left Triangle
 Str = "Downward Left Triangle <br>";
