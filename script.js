@@ -7,11 +7,11 @@ import { Pyramid } from "./Module/Pyramid.mjs";
 import { InvertedPyramid } from "./Module/InvertedPyramid.mjs";
 import { HollowInvertedPyramid } from "./Module/HollowInvertedPyramid.mjs";
 import { Rhombus } from "./Module/Rhombus.mjs";
+import { PrintStars } from "./Module/PrintStars.mjs";
 
-let out = document.querySelector(".out1");
 let n = 5;
 
-out.innerHTML = HollowSquare(n); //////////// Hollow square
+PrintStars(HollowSquare(n)); //////////// Hollow square
 //////
 out = document.querySelector(".out2");
 out.innerHTML = RightTriangle(n); //////////// Right Triangle
@@ -37,3 +37,4 @@ out.innerHTML = HollowInvertedPyramid(n); //////// Hollow Inverted Pyramid
 out = document.querySelector(".out9");
 out.innerHTML = Rhombus(n); //////////// Rhombus
 /////////////////////////
+PrintStars(Rhombus(n));
