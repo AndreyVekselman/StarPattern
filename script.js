@@ -1,4 +1,5 @@
 import { HollowSquare } from "./Module/HollowSquare.mjs";
+import { RightTriangle } from "./Module/RightTriangle.mjs";
 
 let out = document.querySelector(".out1");
 let Str = "";
@@ -9,25 +10,10 @@ let flag = 0;
 out.innerHTML = HollowSquare(n);
 //////
 out = document.querySelector(".out2");
-Str = "";
 //////////// Right Triangle
-Str = "Right Triangle <br>";
-n = 5;
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (j <= n - i) {
-      Str += "&nbsp ";
-    } else {
-      Str += "* ";
-    }
-  }
-  Str += "<br>";
-}
-Str += "<br><hr>";
-out.innerHTML = Str;
+out.innerHTML = RightTriangle(n);
 //////////
 out = document.querySelector(".out3");
-Str = "";
 
 //////////// Left Triangle
 Str = "Left Triangle <br>";
