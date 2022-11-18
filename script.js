@@ -11,12 +11,12 @@ import { PrintStars } from "./Module/PrintStars.mjs";
 
 let n = 5;
 
-PrintStars(HollowSquare(n)); //////////// Hollow square
-PrintStars(RightTriangle(n)); //////////// Right Triangle
-PrintStars(LeftTriangle(n)); //////////// Left Triangle
-PrintStars(DownwardLeftTriangle(n)); //////////// Downward Left Triangle
-PrintStars(LeftHollowTriangle(n)); //////////// Left Hollow Triangle
-PrintStars(Pyramid(n)); //////////// Pyramid
-PrintStars(InvertedPyramid(n)); //////////// Inverted Pyramid
-PrintStars(HollowInvertedPyramid(n)); //////// Hollow Inverted Pyramid
-PrintStars(Rhombus(n)); //////////// Rhombus
+PrintStars(HollowSquare, n); //////////// Hollow square
+PrintStars(RightTriangle, n); //////////// Right Triangle
+PrintStars(LeftTriangle, n); //////////// Left Triangle
+PrintStars(DownwardLeftTriangle, n); //////////// Downward Left Triangle
+PrintStars(LeftHollowTriangle, n); //////////// Left Hollow Triangle
+PrintStars(Pyramid, n); //////////// Pyramid
+PrintStars(InvertedPyramid, n); //////////// Inverted Pyramid
+PrintStars(HollowInvertedPyramid, n); //////// Hollow Inverted Pyramid
+PrintStars(Rhombus, n); //////////// Rhombus
